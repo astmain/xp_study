@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+小满ts_react课程        https://www.bilibili.com/video/BV1mcpPeMETt?p=3
+tsconfig.json          管理src
+tsconfig.node.json     管理vite.config.ts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+vite-env.d.ts          可以导入图片       /// <reference types="vite/client" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+main.tsx               非空断言给编辑说必定一定会读取到  document.getElementById('root')!
+main.tsx               严格模式          React.StrictMode
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+scripts                lint检查语法是否有问题
 
-- Configure the top-level `parserOptions` property like this:
+public/data.json       可以直接访问            http://localhost:5173/data.json
+npm run build          查看public和stc/assets  打包后的情况
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+4.我想支持泛型函数 因为他把<D> 理解成了是一个元素 <div> 纠正泛型<T,>
+
+
+
+
+
