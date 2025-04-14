@@ -1,5 +1,5 @@
 // prisma/schema.prisma    公司     D:\AAA\xx_work\electron_desktop_01\prisma\dev.db
-// prisma/schema.prisma    家里     E:\AAA\xp_work\electron_desktop_01\prisma\dev.db
+// prisma/schema.prisma    家里     E:\AAA\xp_study\electron_desktop_01\prisma\dev.db
 
 // 创建数据库      npx prisma db push
 // 生产语法       npx prisma generate

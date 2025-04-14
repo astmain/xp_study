@@ -12,7 +12,7 @@ git config --global core.quotepath false  && git config --global i18n.commit.enc
 
 0.克隆项目            git clone     git remote add origin https://e.coding.net/dtron/zidonghuayunhang/xp_work.git
 
-1.绑定文件            git init && git remote add origin  git@github.com:astmain/xp_study.git
+1.绑定文件            git init && git remote add origin  git@github.com:astmain/study_odoo1.git
 
 2.上传代码            echo "上传代码?"  &&    TIMEOUT /T 60  &&   echo "↑↑↑开始上传↑↑↑↑"  &&      git add . &&  git commit -m "许鹏:%date:~0,10% %time:~0,-3%"   &&  git push  -f   origin  xupeng
 
