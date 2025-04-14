@@ -1,0 +1,10 @@
+帮我创建一个electron项目使用使用  vue3 vite    @electron/remote   ,使用js不要使用ts
+
+
+
+
+electron项目使用使用nodeIntegration         vite项目使用了没办法事实看到数据
+
+
+
+

@@ -1,0 +1,53 @@
+// prisma/schema.prisma         D:\AAA\xx_work\electron_desktop_04\prisma\dev.db
+//                              E:\AAA\xp_work\electron_desktop_04\prisma\dev.db
+
+// 创建数据库      npx prisma db push
+// 生产语法       npx prisma generate
+// js schema.prisma  数据库使用sqlite,  创建一张表 cookies字段可以存储json
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator json {
+  provider = "prisma-json-types-generator"
+}
+
+model User {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String @unique
+}
+
+model tb_history {
+  id    Int    @id @default(autoincrement())
+  name  String
+  url   String
+  time1 String
+}
+
+model tb_collect {
+  id      Int     @id @default(autoincrement())
+  name    String
+  url     String
+  label   String
+  is_edit Boolean @default(false)
+}
+
+model tb_account {
+  id           Int     @id @default(autoincrement())
+  cookies_str  String
+  cookies      String
+  webview_name String
+  partition    String  @unique
+  nickname     String
+  url          String
+  user_id      String
+  avatar       String
+  line         Boolean @default(false)
+}

@@ -1,0 +1,76 @@
+packages:
+  # 桌面开发 =====================================================
+  - "electron_desktop_web_02/desktop"
+  - "electron_desktop_web_02/web"
+  - "electron_desktop_web_03/desktop"
+  - "electron_desktop_web_03/web"
+  - "electron_desktop_04/desktop"
+  - "electron_desktop_04/render"
+  - "electron_desktop_00"
+  - "electron_desktop_01"
+  
+  - "electron_desktop_05/desktop"
+  - "electron_desktop_05/render"
+  
+    # 工具包 =====================================================webview_run
+  - "tool_js_web"
+  - "tool_js_spider"
+  - "tool_js_node"
+  - "tool_js_api_platform"
+  - "webview_run"
+
+#安装内部包              pnpm -F electron_desktop_web_02/desktop    add         electron-win-state -S@8.0.0
+#安装内部包              pnpm -F electron_desktop_web_02/desktop    remove      electron-store
+
+
+
+# 查看当前pnpm源
+#  pnpm config get registry
+
+# 设置pnpm源
+#  pnpm set config registry https://registry.npmmirror.com
+#  pnpm set config registry https://registry.npmjs.org/
+
+
+
+
+# 安装依赖（pnpm、yarn、cnpm、npm均可，推荐用pnpm或cnpm）
+#  pnpm i
+
+# 本地开发
+#  npm run dev
+
+# 生产打包
+# npm run build
+
+# npm查看缓存路径
+# npm config get cache
+
+# npm删除缓存
+# npm cache clean --force
+
+# pnpm查看缓存路径
+# pnpm store path
+
+# pnpm删除缓存
+# pnpm store prune
+
+
+
+# netstat -ano|grep 8400
+# netstat -ano|grep 8400
+# netstat -ano|grep 9999
+
+
+#    pnpm run main:build
+#
+#    安装包                pnpm -F main add tool_node
+#    安装包                pnpm install
+#    查看缓存路径           pnpm store path
+#    删除缓存               pnpm store prune
+#    删除包                pnpm remove tool_node
+#
+#       npm install -g remove-node-modules            remove-node-modules                     rd /s /q node_modules
+
+
+

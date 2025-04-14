@@ -1,0 +1,30 @@
+{
+  "name": "main6",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "any_web": "workspace:^",
+    "element-plus": "^2.6.0",
+    "sass": "^1.81.0",
+    "unimport": "^3.7.1",
+    "axios": "1.7.0",
+    "vue": "^3.4.19",
+    "vue-cropper": "^1.1.4",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue-macros/reactivity-transform": "^1.0.3",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.4",
+    "vite-plugin-require-transform": "^1.0.21"
+  }
+}

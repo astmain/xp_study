@@ -1,0 +1,17 @@
+{
+  "name": "tool_js_node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "push": "",
+    "test": ""
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "1.7.7",
+    "fs-extra": "11.3.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0"
+  }
+}

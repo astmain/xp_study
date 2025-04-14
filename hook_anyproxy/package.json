@@ -1,0 +1,23 @@
+{
+  "name": "chrome_anyproxy2",
+  "description": "日期:2024_06_11__18_18_26星期2",
+  "version": "0.0.1",
+  "private": true,
+  "is_": true,
+  "scripts": {
+    "dev:run_anyproxy": "chcp 65001   &&  node ./run_anyproxy.js",
+    "text": ""
+  },
+  "dependencies": {
+    "anyproxy": "^4.1.3",
+    "axios": "1.8.2",
+    "dayjs": "1.11.10",
+    "cheerio": "1.0.0-rc.12",
+    "concurrently": "^8.2.2",
+    "jquery": "3.5.0",
+    "jsdom": "17.0.0",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+  }
+}

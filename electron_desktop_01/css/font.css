@@ -1,0 +1,484 @@
+
+
+
+.fz-1 {
+  font-size: 1px !important;
+}
+.fz-2 {
+  font-size: 2px !important;
+}
+.fz-3 {
+  font-size: 3px !important;
+}
+.fz-4 {
+  font-size: 4px !important;
+}
+.fz-5 {
+  font-size: 5px !important;
+}
+.fz-6 {
+  font-size: 6px !important;
+}
+.fz-7 {
+  font-size: 7px !important;
+}
+.fz-8 {
+  font-size: 8px !important;
+}
+.fz-9 {
+  font-size: 9px !important;
+}
+.fz-10 {
+  font-size: 10px !important;
+}
+.fz-11 {
+  font-size: 11px !important;
+}
+.fz-12 {
+  font-size: 12px !important;
+}
+.fz-13 {
+  font-size: 13px !important;
+}
+.fz-14 {
+  font-size: 14px !important;
+}
+.fz-15 {
+  font-size: 15px !important;
+}
+.fz-16 {
+  font-size: 16px !important;
+}
+.fz-17 {
+  font-size: 17px !important;
+}
+.fz-18 {
+  font-size: 18px !important;
+}
+.fz-19 {
+  font-size: 19px !important;
+}
+.fz-20 {
+  font-size: 20px !important;
+}
+.fz-21 {
+  font-size: 21px !important;
+}
+.fz-22 {
+  font-size: 22px !important;
+}
+.fz-23 {
+  font-size: 23px !important;
+}
+.fz-24 {
+  font-size: 24px !important;
+}
+.fz-25 {
+  font-size: 25px !important;
+}
+.fz-26 {
+  font-size: 26px !important;
+}
+.fz-27 {
+  font-size: 27px !important;
+}
+.fz-28 {
+  font-size: 28px !important;
+}
+.fz-29 {
+  font-size: 29px !important;
+}
+.fz-30 {
+  font-size: 30px !important;
+}
+.fz-31 {
+  font-size: 31px !important;
+}
+.fz-32 {
+  font-size: 32px !important;
+}
+.fz-33 {
+  font-size: 33px !important;
+}
+.fz-34 {
+  font-size: 34px !important;
+}
+.fz-35 {
+  font-size: 35px !important;
+}
+.fz-36 {
+  font-size: 36px !important;
+}
+.fz-37 {
+  font-size: 37px !important;
+}
+.fz-38 {
+  font-size: 38px !important;
+}
+.fz-39 {
+  font-size: 39px !important;
+}
+.fz-40 {
+  font-size: 40px !important;
+}
+.fz-41 {
+  font-size: 41px !important;
+}
+.fz-42 {
+  font-size: 42px !important;
+}
+.fz-43 {
+  font-size: 43px !important;
+}
+.fz-44 {
+  font-size: 44px !important;
+}
+.fz-45 {
+  font-size: 45px !important;
+}
+.fz-46 {
+  font-size: 46px !important;
+}
+.fz-47 {
+  font-size: 47px !important;
+}
+.fz-48 {
+  font-size: 48px !important;
+}
+.fz-49 {
+  font-size: 49px !important;
+}
+.fz-50 {
+  font-size: 50px !important;
+}
+
+.fw-1 {
+  font-weight: normal;
+}
+.fw-2 {
+  font-weight: bold;
+}
+.fw-3 {
+  font-weight: bolder;
+}
+.fw-4 {
+  font-weight: lighter;
+}
+
+.fw1 {
+  font-weight: normal;
+}
+.fw2 {
+  font-weight: bold;
+}
+.fw3 {
+  font-weight: bolder;
+}
+.fw4 {
+  font-weight: lighter;
+}
+
+.fc {
+  text-align: center;
+} /* 文字居中 */
+.fl {
+  text-align: left;
+} /* 文字居左 */
+.fr {
+  text-align: right;
+} /* 文字居右 */
+
+.f居中 {
+  text-align: center;
+} /* 文字居中 */
+.f居左 {
+  text-align: left;
+} /* 文字居左 */
+.f居右 {
+  text-align: right;
+} /* 文字居右 */
+
+.fxy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fx {
+  display: flex;
+  align-items: center;
+}
+.fy {
+  display: flex;
+  justify-content: center;
+}
+
+.f-gray-100 {
+  color: #f7fafc;
+}
+.f-gray-200 {
+  color: #edf2f7;
+}
+.f-gray-300 {
+  color: #e2e8f0;
+}
+.f-gray-400 {
+  color: #cbd5e0;
+}
+.f-gray-500 {
+  color: #a0aec0;
+}
+.f-gray-600 {
+  color: #718096;
+}
+.f-gray-700 {
+  color: #4a5568;
+}
+.f-gray-800 {
+  color: #2d3748;
+}
+.f-gray-900 {
+  color: #1a202c;
+}
+.f-red-100 {
+  color: #fff5f5;
+}
+.f-red-200 {
+  color: #fed7d7;
+}
+.f-red-300 {
+  color: #feb2b2;
+}
+.f-red-400 {
+  color: #fc8181;
+}
+.f-red-500 {
+  color: #f56565;
+}
+.f-red-600 {
+  color: #e53e3e;
+}
+.f-red-700 {
+  color: #c53030;
+}
+.f-red-800 {
+  color: #9b2c2c;
+}
+.f-red-900 {
+  color: #742a2a;
+}
+.f-orange-100 {
+  color: #fffaf0;
+}
+.f-orange-200 {
+  color: #feebc8;
+}
+.f-orange-300 {
+  color: #fbd38d;
+}
+.f-orange-400 {
+  color: #f6ad55;
+}
+.f-orange-500 {
+  color: #ed8936;
+}
+.f-orange-600 {
+  color: #dd6b20;
+}
+.f-orange-700 {
+  color: #c05621;
+}
+.f-orange-800 {
+  color: #9c4221;
+}
+.f-orange-900 {
+  color: #7b341e;
+}
+.f-yellow-100 {
+  color: #fffff0;
+}
+.f-yellow-200 {
+  color: #fefcbf;
+}
+.f-yellow-300 {
+  color: #faf089;
+}
+.f-yellow-400 {
+  color: #f6e05e;
+}
+.f-yellow-500 {
+  color: #ecc94b;
+}
+.f-yellow-600 {
+  color: #d69e2e;
+}
+.f-yellow-700 {
+  color: #b7791f;
+}
+.f-yellow-800 {
+  color: #975a16;
+}
+.f-yellow-900 {
+  color: #744210;
+}
+.f-green-100 {
+  color: #f0fff4;
+}
+.f-green-200 {
+  color: #c6f6d5;
+}
+.f-green-300 {
+  color: #9ae6b4;
+}
+.f-green-400 {
+  color: #68d391;
+}
+.f-green-500 {
+  color: #48bb78;
+}
+.f-green-600 {
+  color: #38a169;
+}
+.f-green-700 {
+  color: #2f855a;
+}
+.f-green-800 {
+  color: #276749;
+}
+.f-green-900 {
+  color: #22543d;
+}
+.f-teal-100 {
+  color: #e6fffa;
+}
+.f-teal-200 {
+  color: #b2f5ea;
+}
+.f-teal-300 {
+  color: #81e6d9;
+}
+.f-teal-400 {
+  color: #4fd1c5;
+}
+.f-teal-500 {
+  color: #38b2ac;
+}
+.f-teal-600 {
+  color: #319795;
+}
+.f-teal-700 {
+  color: #2c7a7b;
+}
+.f-teal-800 {
+  color: #285e61;
+}
+.f-teal-900 {
+  color: #234e52;
+}
+.f-blue-100 {
+  color: #ebf8ff;
+}
+.f-blue-200 {
+  color: #bee3f8;
+}
+.f-blue-300 {
+  color: #90cdf4;
+}
+.f-blue-400 {
+  color: #63b3ed;
+}
+.f-blue-500 {
+  color: #4299e1;
+}
+.f-blue-600 {
+  color: #3182ce;
+}
+.f-blue-700 {
+  color: #2b6cb0;
+}
+.f-blue-800 {
+  color: #2c5282 !important;
+}
+.f-blue-900 {
+  color: #2a4365;
+}
+.f-indigo-100 {
+  color: #ebf4ff;
+}
+.f-indigo-200 {
+  color: #c3dafe;
+}
+.f-indigo-300 {
+  color: #a3bffa;
+}
+.f-indigo-400 {
+  color: #7f9cf5;
+}
+.f-indigo-500 {
+  color: #667eea;
+}
+.f-indigo-600 {
+  color: #5a67d8;
+}
+.f-indigo-700 {
+  color: #4c51bf;
+}
+.f-indigo-800 {
+  color: #434190;
+}
+.f-indigo-900 {
+  color: #3c366b;
+}
+.f-purple-100 {
+  color: #faf5ff;
+}
+.f-purple-200 {
+  color: #e9d8fd;
+}
+.f-purple-300 {
+  color: #d6bcfa;
+}
+.f-purple-400 {
+  color: #b794f4;
+}
+.f-purple-500 {
+  color: #9f7aea;
+}
+.f-purple-600 {
+  color: #805ad5;
+}
+.f-purple-700 {
+  color: #6b46c1;
+}
+.f-purple-800 {
+  color: #553c9a;
+}
+.f-purple-900 {
+  color: #44337a;
+}
+.f-pink-100 {
+  color: #fff5f7;
+}
+.f-pink-200 {
+  color: #fed7e2;
+}
+.f-pink-300 {
+  color: #fbb6ce;
+}
+.f-pink-400 {
+  color: #f687b3;
+}
+.f-pink-500 {
+  color: #ed64a6;
+}
+.f-pink-600 {
+  color: #d53f8c;
+}
+.f-pink-700 {
+  color: #b83280;
+}
+.f-pink-800 {
+  color: #97266d;
+}
+.f-pink-900 {
+  color: #702459;
+}

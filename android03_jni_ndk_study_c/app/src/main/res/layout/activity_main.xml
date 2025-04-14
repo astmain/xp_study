@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:id="@+id/btn01_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn01_add"
+        android:text="btn01_add"
+        />
+
+    <Button
+        android:id="@+id/btn02_str_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn02_str_join"
+        android:text="btn02_str_join"
+        />
+
+    <Button
+        android:id="@+id/btn03_arr_add100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn03_arr_add100"
+        android:text="btn03_arr_add100"
+        />
+
+
+    <Button
+        android:id="@+id/btn04_check_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn04_check_password"
+        android:text="btn04_check_password"
+        />
+
+    <Button
+        android:id="@+id/call_add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="call_add2"
+        android:text="call_add2"
+        />
+</LinearLayout>

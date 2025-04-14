@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+    <!--
+    tv  表式   TextView
+    ll  表式   LinearLayout
+    iv  表式   ImageView
+    -->
+
+
+    <!--<Button android:id="@+id/btn11" style="@style/btn_red1" />-->
+    <!--<Button android:id="@+id/btn21" style="@style/btn_green1" />-->
+    <!--<Button android:id="@+id/btn31" style="@style/btn_blue1" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/song_item"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_music_note_24"
+            />
+
+        <TextView
+            android:id="@+id/tv_current_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是当前正在播的歌曲"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

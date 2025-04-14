@@ -1,0 +1,71 @@
+plugins {
+    id 'org.springframework.boot' version '3.3.0'
+    id 'io.spring.dependency-management' version '1.1.5'
+    id 'java'
+}
+
+group = 'com.xupeng'
+version = '0.0.1'
+
+
+java {
+    sourceCompatibility = 17
+    targetCompatibility = 17
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
+
+
+    //数据库################################################################
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis' //
+    implementation 'com.mysql:mysql-connector-j' //
+    implementation 'com.mybatis-flex:mybatis-flex-spring-boot3-starter:1.10.4' //
+    implementation 'com.zaxxer:HikariCP' //
+    implementation 'com.alibaba:druid:1.2.18' //
+//
+
+    //配置jwt
+    implementation 'io.jsonwebtoken:jjwt:0.9.1' //
+    implementation 'javax.xml.bind:jaxb-api:2.3.1' //
+
+    //hutool和json转化
+    implementation 'cn.hutool:hutool-all:5.8.22'
+    implementation 'com.alibaba:fastjson:1.2.83'
+    //验证码
+    implementation 'com.github.penggle:kaptcha:2.3.2'
+
+//测试
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+}
+tasks.withType(JavaCompile) {
+    options.compilerArgs << '-parameters'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+
+/*
+gradle -v              查看版本
+gradle dependencies    查看依赖
+gradle projects        查看项目的子模块或子项目列表
+gradle tasks           显示项目中可用的任务列表
+
+*/

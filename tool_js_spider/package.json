@@ -1,0 +1,17 @@
+{
+  "name": "tool_js_spider",
+  "private": true,
+  "version": "0.0.0",
+  "main": "",
+  "scripts": {
+    "run": ""
+  },
+  "dependencies": {
+    "axios": "1.7.7",
+    "yup": "1.6.1"
+  },
+  "devDependencies": {
+    "puppeteer": "23.11.1",
+    "puppeteer-core": "23.11.1"
+  }
+}

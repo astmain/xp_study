@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="edit_black" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#e0e0e0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">text_black</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">#1e1e1e</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+</resources>
+
+    <!--
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_edit1"
+                android:gravity="center"
+                android:hint="用户名"
+                android:paddingLeft="10dp"
+                android:textColor="@color/my_black" />
+
+    -->

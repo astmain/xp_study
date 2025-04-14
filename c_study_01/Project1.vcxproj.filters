@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="b03_互换两个数.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b04_实参_形参_返回多个值.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b06_数组_指针取值.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b07_数组_输入.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b08_指针的长度.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b01_站位符_数据类型_输入输出.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b02_指针_地址_值_游戏修改值.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b05_多级指针111.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b09_动态内存分配.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="b10_动态创建数组.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c01_函数指针.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c02_联合体.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c03_枚举.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c04_别名.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c05_结构体.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c06_结构体指针.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\指针理解04.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

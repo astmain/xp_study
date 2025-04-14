@@ -1,0 +1,50 @@
+{
+  "name": "electron_desktop_01",
+  "private": true,
+  "version": "0.0.0",
+  "aaa": "   npm run render      npm run desktop                          C:\\Windows\\Microsoft.NET\\Framework64\\v3.0\\WPF\\PresentationFontCache.exe               ",
+  "安装包": "    pnpm -F     electron_desktop_01                    add          lodash        -S            ",
+  "卸载包": "    pnpm -F     electron_desktop_01    remove         electron-win-state@8.0.0                         ",
+  "main": "desktop/desktop.js",
+  "scripts": {
+    "render": "vite",
+    "desktop": "chcp 65001 && electron .",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "@loancrate/prisma-schema-parser": "^3.0.0",
+    "@prisma/client": "^6.5.0",
+    "axios": "1.7.0",
+    "bootstrap-icons": "1.11.3",
+    "electron-win-state": "1.1.22",
+    "element-plus": "^2.9.7",
+    "fs-extra": "11.3.0",
+    "lodash": "4.17.21",
+    "pinia": "3.0.1",
+    "pinia-plugin-persist": "1.0.0",
+    "pinyin-pro": "3.24.2",
+    "tool_js_api_platform": "workspace:^",
+    "tool_js_node": "workspace:^",
+    "tool_js_spider": "workspace:^",
+    "tool_js_web": "workspace:^",
+    "vite-plugin-require-transform": "1.0.21",
+    "vue": "^3.5.13",
+    "vue-draggable-plus": "^0.6.0",
+    "vue-router": "^4.5.0",
+    "vue-simple-context-menu": "^4.1.0",
+    "webview_run": "workspace:^",
+    "yup": "1.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "axios": "1.7.0",
+    "bootstrap-icons": "1.11.3",
+    "electron": "35.0.0",
+    "prisma": "^6.5.0",
+    "prisma-json-types-generator": "^3.2.3",
+    "vite": "^6.2.0"
+  }
+}

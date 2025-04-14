@@ -1,0 +1,40 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\AAA_android_studio]
+@="AAA_android_studio"
+"Icon"="E:\\AAA_android-studio_ladybug-2024.2.1.9-windows\\bin\\studio64.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\AAA_android_studio\command]
+@="\"E:\\AAA_android-studio_ladybug-2024.2.1.9-windows\\bin\\studio64.exe\" \"%1\""
+    
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\AAA_android_studio]
+@="AAA_android_studio"
+"Icon"="E:\\AAA_android-studio_ladybug-2024.2.1.9-windows\\bin\\studio64.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\AAA_android_studio\command]
+@="\"E:\\AAA_android-studio_ladybug-2024.2.1.9-windows\\bin\\studio64.exe\" \"%V\""
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AAA_android_studio]
+@="AAA_android_studio"
+"Icon"="E:\\AAA_android-studio_ladybug-2024.2.1.9-windows\\bin\\studio64.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AAA_android_studio\command]
+@="\"E:\\AAA_android-studio_ladybug-2024.2.1.9-windows\\bin\\studio64.exe\" \"%V\""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

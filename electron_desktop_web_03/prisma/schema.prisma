@@ -1,0 +1,35 @@
+// prisma/schema.prisma         D:\AAA\xx_work\electron_desktop_web_02\prisma\dev.db
+// prisma/schema.prisma         E:\AAA\xp_work\electron_desktop_web_02\prisma\dev.db
+
+//创建数据库     npx prisma db push
+//生产语法       npx prisma generate
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String @unique
+}
+
+model tb_history {
+  id    Int    @id @default(autoincrement())
+  name  String
+  url   String
+  time1 String
+}
+
+model tb_collect {
+  id      Int     @id @default(autoincrement())
+  name    String
+  url     String
+  label   String
+  is_edit Boolean @default(false)
+}

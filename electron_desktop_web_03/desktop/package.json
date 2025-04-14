@@ -1,0 +1,27 @@
+{
+  "name": "electron_desktop_web_03/desktop",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.js",
+  "scripts": {
+    "desktop": "electron ."
+  },
+  "dependencies": {
+    "axios": "1.7.7",
+    "body-parser": "2.0.0",
+    "cors": "2.8.5",
+    "electron-win-state": "1.1.22",
+    "express": "4.21.0",
+    "express-ws": "5.0.2",
+    "tool_js_web": "workspace:^",
+    "tool_js_node": "workspace:^",
+    "tool_js_spider": "workspace:^",
+    "yup": "1.6.1"
+  },
+  "devDependencies": {
+    "electron": "34.0.0",
+    "electron-builder": "25.1.8",
+    "puppeteer": "23.11.1",
+    "puppeteer-core": "23.11.1"
+  }
+}

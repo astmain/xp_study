@@ -1,0 +1,9 @@
+package com.xupeng.controller_MAIN.mapper;
+
+import com.mybatisflex.core.BaseMapper;
+import com.xupeng.controller_MAIN.entity.TB_menu;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface DB_menu extends BaseMapper<TB_menu> {
+}

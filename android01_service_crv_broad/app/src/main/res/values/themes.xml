@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Myapplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Myapplication" parent="Base.Theme.Myapplication" />
+
+
+    <style name="mytheme1" parent="Theme.AppCompat.Light" >
+        <!--&lt;!&ndash;  颜色系统 ################################################## &ndash;&gt; &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/red1</item> &ndash;&gt;-->
+        <!--<item name="colorPrimaryDark">@color/red1</item> &ndash;&gt;-->
+        <!--<item name="colorAccent">@color/red1</item> &ndash;&gt;-->
+        <!--取消标题-->
+        <item name="windowNoTitle">true</item>
+        <!--取消返回键-->
+        <item name="windowActionBar">false</item>
+        <!--全屏模式-->
+        <item name="android:windowFullscreen">false</item>
+
+    </style>
+</resources>

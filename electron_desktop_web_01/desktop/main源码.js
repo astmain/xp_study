@@ -1,0 +1,101 @@
+const {app, BrowserWindow, ipcMain, session, ipcRenderer, WebContentsView, View} = require('electron')
+// electron关闭警告
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+
+// electron开启端口让puppeteer-core链接
+app.commandLine.appendSwitch("remote-debugging-address", "127.0.0.1");//开启webSocketDebuggerUrl地址
+app.commandLine.appendSwitch("remote-debugging-port", "8400")//开启webSocketDebuggerUrl端口
+app.commandLine.appendSwitch("disable-site-isolation-trials");//控制iframe如果要用时需要开启,来禁用站点隔离试验。
+app.commandLine.appendSwitch('disable-web-security') //关闭浏览器安全策略
+
+
+main()
+
+
+let config = {
+    // icon: PATH["logo"],//
+    width: 1800, height: 800, x: 2600, y: 0, webPreferences: {
+        preload: require('path').join(__dirname, 'preload.js'),//预加载脚本
+        webviewTag: true, // 是否使用<webview>标签 在一个独立的 frame 和进程里显示外部 web 内容
+        webSecurity: false, // 禁用web安全同源策略,可以跨域发送ajax
+        sandbox: false, // 沙盒开启,没办法使用preload   沙盒 Electron 会在渲染进程中启用一个沙箱环境。这个沙箱环境会限制渲染进程的权限,使其无法访问敏感的系统资源,如文件系统、网络、环境变量等。渲染进程只能使用 Web APIs 提供的功能,无法调用 Node.js 的功能。
+        devTools: true, // electron web控制台
+        allowDisplayingInsecureContent: true, //控制在 HTTPS 页面中是否允许显示 第三方HTTP 内容
+        allowRunningInsecureContent: true, // HTTPS 页面中, Electron 应用程序会允许加载和运行 HTTP 资源(如脚本、插件等)
+        nodeIntegration: true, // 在渲染进程中,可以直接访问 Node.js 的全局对象和模块,就像在 Node.js 脚本中一样           是否启用node集成 渲染进程的内容有访问node的能力 //设置能在页面使用nodejs的API
+        contextIsolation: true, //关闭警告信息,Electron 会在渲染进程中创建一个独立的 JavaScript 执行上下文(context)。这个独立的上下文中不会共享 Node.js 的全局对象和模块,比如 require、process、global 等。渲染进程中的代码只能访问浏览器提供的 Web APIs,而不能访问 Node.js 的功能
+        nodeIntegrationInSubFrames: true, // 在渲染进程的子框架(iframe)中,可以直接访问 Node.js 的全局对象和模块,就像在 Node.js 脚本中一样
+        backgroundThrottling: false, //当 Electron 应用程序处于后台时(窗口不可见),Electron 会自动限制渲染进程的执行速度
+        enableRemoteModule: true, //渲染进程访问主进程对象的方法,   enableRemoteModule保证renderer.js可以可以正常require('electron').remote，此选项默认关闭
+        nodeIntegrationInWorker: true, // WebWorker 进程是否能够访问 Node.js
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Safari/537.36',
+    },
+}
+
+
+async function main() {
+
+    await app.whenReady()
+
+    app.on('window-all-closed', () => process.platform !== 'darwin' ? app.quit() : 0)
+
+    // 监听####################################################################################
+    require("./ON_ajax.js")
+    require("./ON_webview_open_url.js")
+    // require("./ON_window_open_new_page.js")
+
+
+    // IPC通信####################################################################################
+    require("./IPC_get_PATH.js")
+    console.log(`程序路径---:`, PATH)
+    require("./IPC_axios.js")
+    require("./IPC_get_cookies.js")
+    require("./IPC_get_cookies_str.js")
+
+
+    // IPC_spider爬虫框架####################################################################################
+    require("./IPC_spider.js")
+    require("./IPC_spider_webview.js")
+
+
+    // 主窗口####################################################################################
+    globalThis.main_window = new BrowserWindow(config)
+
+
+    await main_window.loadURL(`http://127.0.0.1:22222?now=${Date.now()}`, {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Safari/537.36'})
+    main_window.webContents.openDevTools()
+
+
+    // session.fromPartition('persist:douyin111')
+    // console.log(`ses.setProxy---:`, ses.setProxy)
+    // await ses.setProxy({
+    //     proxyRules: 'socks5://127.0.0.1:9870',
+    // })
+    //
+    //
+    // session.fromPartition('persist:douyin222')
+    // console.log(`ses.setProxy---:`, ses.setProxy)
+    // await ses.setProxy({
+    //     proxyRules: 'socks5://127.0.0.1:9870',
+    // })
+
+
+    let config222 = JSON.parse(JSON.stringify(config))
+    console.log(`config222---:`, config222)
+    config222.webPreferences.partition = "persist:douyin111"
+    const view1 = new WebContentsView({
+        webPreferences: {
+            partition: 'persist:account1'
+        }
+    })
+    main_window.contentView.addChildView(view1)
+    // view1.webContents.loadURL('https://www.zhihu.com/zvideo/upload-video', {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Safari/537.36'})
+    view1.webContents.loadURL('https://www.bilibili.com', {userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Safari/537.36'})
+    view1.setBounds({x: 0, y: 0, width: 800, height: 800})
+
+
+}
+
+
+
+

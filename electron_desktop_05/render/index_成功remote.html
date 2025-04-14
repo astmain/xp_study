@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的桌面应用</title>
+</head>
+<body>
+<div id="app"></div>
+<!--    <script type="module" src="/main.js"></script>-->
+<button id="btn">打开一个新页面</button>
+<webview partition="persist:douyin111"
+         nodeIntegration="true"
+         contextIsolation="false"
+         useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Safari/537.36"
+         src="https://cn.bing.com/" style="width: 100%; height: 650px"/>
+
+
+<script>
+    // 引入remote远程操作窗口，新版本需要下载@electron/remote
+
+    // 当页面节点加载完才进行操作
+    window.addEventListener("DOMContentLoaded", () => {
+        const {BrowserWindow, session} = require('@electron/remote');
+        // 点击按钮打开一个新窗口
+        let btn = document.querySelector("#btn")
+        btn.addEventListener("click", () => {
+            const fs = require('fs')
+            console.log(`111---session:`,)
+            // const {app,  ipcMain, session, ipcRenderer, WebContentsView, View} = require('electron')
+            // console.log(`111---fs:`, fs)
+            // console.log(`111---app:`, app)
+            // console.log(`111---app:`, session)
+            console.log(`111---app:`, {BrowserWindow, session})
+            // 创建一个新窗口
+            // let win = new BrowserWindow({
+            //     width: 400,
+            //     height: 200
+            // })
+            // // 加载新页面
+            // win.loadURL("https://cn.bing.com/");
+            // win.on("close", () => {
+            //     win = null;
+            // });
+        })
+    })
+
+
+</script>
+</body>
+</html>

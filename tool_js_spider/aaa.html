@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Audio with JavaScript</title>
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="https://sf5-hl-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/e99b49c3f914471fa7d37f7c47f497ae" type="audio/mp3">
+    </audio>
+    <button onclick="playAudio()">播放</button>
+    <button onclick="pauseAudio()">暂停</button>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        function playAudio() {
+            audio.play();
+        }
+
+        function pauseAudio() {
+            audio.pause();
+        }
+    </script>
+</body>
+
+</html>

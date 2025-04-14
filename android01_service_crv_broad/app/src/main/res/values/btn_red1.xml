@@ -1,0 +1,33 @@
+
+
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="btn_red1" parent="Theme.AppCompat.Light">
+    <item name="android:background">@drawable/selector_red1</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">36sp</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:layout_margin">4sp</item>
+    <item name="android:textColor">#fff</item>
+    <item name="android:text">btn</item>
+</style>
+</resources>
+
+
+
+
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--<style name="btn_red" parent="Theme.AppCompat.Light">-->
+<!--    <item name="android:background">@drawable/selector_red1</item>-->
+<!--    <item name="android:layout_width">wrap_content</item>-->
+<!--    <item name="android:layout_height">wrap_content</item>-->
+<!--    <item name="android:textSize">20sp</item>-->
+<!--    <item name="android:textColor">#fff</item>-->
+<!--    <item name="android:layout_margin">2sp</item>-->
+<!--    <item name="android:paddingLeft">1sp</item>-->
+<!--    <item name="android:paddingRight">1sp</item>-->
+<!--</style>-->
+<!--</resources>-->
+
+

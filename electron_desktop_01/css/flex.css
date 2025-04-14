@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row; /* 列 排练*/
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column; /* 列 排练*/
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+.evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* 垂直 上下 居中 */
+.fv {
+  display: flex;
+  align-items: center;
+}
+/* 水平 上下 居中 */
+.fh {
+  display: flex;
+  justify-content: center;
+}
+
+/* 子元素间隙 */
+.evenly {
+  display: flex;
+  gap: 20px;
+}
+
+/*
+
+display: flex;
+flex-direction: column; 
+gap: 20px;
+align-items: center;
+
+*/

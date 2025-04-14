@@ -1,0 +1,29 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--iconfont官网搜索    https://www.iconfont.cn/manage/index?manage_type=mylikes         -->
+    <!--gi动图网站    https://www.gxgif.com/baby/List_5.html         -->
+
+
+    <item
+        android:id="@+id/f01_home" android:icon="@drawable/img_home" android:title="首页"
+        />
+
+    <item
+        android:id="@+id/f02_ajax" android:icon="@drawable/img_me" android:title="网络"
+        />
+
+    <item
+        android:id="@+id/f02_service" android:icon="@drawable/img_me" android:title="服务"
+        />
+
+    <item
+        android:id="@+id/f03_me" android:icon="@drawable/img_me" android:title="个人"
+        />
+
+
+    <!--<item-->
+    <!--    android:id="@+id/f03_me" android:icon="@drawable/img_me22" android:title="个人"-->
+    <!--    />-->
+
+
+</menu>

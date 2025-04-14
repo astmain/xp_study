@@ -1,0 +1,69 @@
+#spring.application.name: springboot-schema-dgs
+
+
+
+server:
+  port: 33333
+# DataSource Config
+spring:
+  redis:
+    port: 6379
+    host: localhost
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/flex_demo
+#    username: root
+#    password: 12345678
+
+#  datasource:
+#    url: jdbc:mysql://103.119.2.223:3303/test3_graphql?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#    username: root
+#    password: 123456
+##        driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.jdbc.Driver
+
+
+
+## 配置 MyBatis-Plus
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#  configuration:
+#    cache-enabled: false # 是否开启二级缓存.
+#    map-underscore-to-camel-case: false #关闭驼峰命名法
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启日志打印
+
+
+
+mybatis-flex:
+  datasource:
+    my_datasource_test1:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://103.119.2.223:3303/test1?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+      test-while-idle: true
+      validation-query: SELECT 1
+    my_datasource_test2:
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://103.119.2.223:3303/test2?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+
+
+    my_datasource_test3_graphql:
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://103.119.2.223:3303/test3_graphql?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+
+
+
+    my_datasource_MAIN:
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://103.119.2.223:3303/main4?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+
+

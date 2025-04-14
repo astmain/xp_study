@@ -1,0 +1,20 @@
+{
+  "name": "electron_desktop_05",
+  "description": "程序启动入口",
+  "安装包": "    pnpm -F     tool_js_node                   add            query-string        -S            ",
+  "卸载包": "    pnpm -F     electron_desktop_web_02/web    remove         electron-win-state@8.0.0                         ",
+  "图标库": "    https://icons.getbootstrap.com/?q=sear#usage                     ",
+  "scripts": {
+    "desktop": "pnpm --filter electron_desktop_05/desktop desktop",
+    "render": "pnpm --filter electron_desktop_05/render render"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "axios": "1.7.7",
+    "dayjs": "1.11.10"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0",
+    "prisma-json-types-generator": "^3.2.3"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "electron_desktop_00",
+  "private": true,
+  "version": "0.0.0",
+  "aaa": "   npm run render      npm run desktop                                 ",
+  "安装包": "    pnpm -F     electron_desktop_00                    add           tool_js_spider        -S            ",
+  "卸载包": "    pnpm -F     electron_desktop_00    remove         electron-win-state@8.0.0                         ",
+  "main": "desktop/desktop.js",
+  "scripts": {
+    "render": "vite",
+    "desktop": "chcp 65001 && electron .",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "axios": "1.7.0",
+    "body-parser": "2.0.0",
+    "bootstrap-icons": "1.11.3",
+    "cors": "2.8.5",
+    "electron-win-state": "1.1.22",
+    "element-plus": "^2.9.7",
+    "express": "4.21.0",
+    "express-ws": "5.0.2",
+    "pinyin-pro": "3.24.2",
+    "tool_js_node": "workspace:^",
+    "tool_js_spider": "workspace:^",
+    "tool_js_web": "workspace:^",
+    "vite-plugin-require-transform": "1.0.21",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "axios": "1.7.0",
+    "bootstrap-icons": "1.11.3",
+    "electron": "35.0.0",
+    "vite": "^6.2.0"
+  }
+}

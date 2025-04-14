@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="text_black" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">text_black</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#1e1e1e</item>
+        <item name="android:padding">4dp</item>
+    </style>
+</resources>
+
+
+<!--
+
+android:padding="0dp"
+android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|center" android:text="msg"
+-->
