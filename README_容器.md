@@ -68,3 +68,51 @@ cmd执行验证token        cpolar authtoken M2M4NDk2YmItMmFlZS00OWJiLTk5YzItYzl
 //查询天气_心知天气   https://www.seniverse.com           账号密码15160315110/uuuuuu123456U.         开发文档 https://seniverse.yuque.com/hyper_data/api_v3
 //https://api.seniverse.com/v3/location/search.json?key=SKddJ-aKQhqiEFiUf&q=泉州
 
+
+服务器扩展虚拟内存=======================================================================
+在 CentOS 上设置虚拟内存（Swap）为 4G 的步骤如下：
+Swap 是 Linux 下的虚拟内存机制，用于在物理内存不足时，把一部分磁盘空间当作内存使用。
+1. 查看当前 Swap 使用情况
+swapon -s
+free -h
+
+2. 创建一个 4G 的 Swap 文件
+sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+
+3. 设置正确的权限
+sudo chmod 600 /swapfile
+
+4. 格式化为 Swap
+sudo mkswap /swapfile
+
+5. 启用 Swap 文件
+sudo swapon /swapfile
+
+6. 设置开机自动挂载
+sudo bash -c 'echo "/swapfile swap swap defaults 0 0" >> /etc/fstab'
+
+7. 确认是否生效
+free -h
+swapon -s
+
+
+
+安装 Docker Compose======================================================================
+1下载
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+2为下载的二进制文件添加可执行权限
+sudo chmod +x /usr/local/bin/docker-compose
+验证是否成功
+docker-compose --version
+
+
+
+
+
+
+
+
+vscode链接失败解决办法
+管道错误是,记得清除 C:\Users\Administrator\.ssh\known_hosts   中的链接
+
+

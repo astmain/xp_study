@@ -1,0 +1,67 @@
+services:
+  mysqldb:
+    image: mysql
+    # restart: always
+    container_name: mysqldb
+    environment:
+      MYSQL_ROOT_PASSWORD: xzz...
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/logs:/var/log/mysql
+      - ./mysql/conf.d:/etc/mysql/conf.d
+
+  pgdb:
+    image: "postgres:17"
+    command:
+      - "postgres"
+    # restart: always
+    container_name: "pgdb"
+    entrypoint:
+      - "docker-entrypoint.sh"
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=xzz...
+    ports:
+      - "5432:5432/tcp"
+    volumes:
+      - "./postgre/data:/var/lib/postgresql/data"
+      - "./postgre/logs:/var/log/postgresql"
+
+  redisdb:
+    image: "redis"
+    # restart: always
+    container_name: "redisdb"
+    ports:
+      - "6379:6379"
+    volumes:
+      - "./redis/data:/data"
+      - "./redis/logs:/logs"
+      - "./redis/redis.conf:/usr/local/etc/redis/redis.conf"
+
+  mongo:
+    image: mongo
+    # restart: always
+    container_name: "mongodb"
+    # command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]   # 开启 副本集
+    # command: >
+    #   mongod --replSet --bind_ip_all
+    command: mongod --replSet rs0 --bind_ip_all --keyFile /mongodb.key
+    entrypoint:
+      - bash
+      - -c
+      - |
+        chmod 400 /mongodb.key
+        chown 999:999 /mongodb.key
+        exec docker-entrypoint.sh $$@
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./mongo/data:/data/db"
+      - "./mongo/mongod.conf:/etc/mongod.conf"
+      - "./mongo/logs:/var/log/mongodb"
+      - "./mongo/mongodb.key:/mongodb.key" # 集群必须使用一致的key
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: xzz...
