@@ -33,6 +33,7 @@ python.exe -m pip install pip==20.2.4
 
 查看环境  conda info -e
 创建环境  conda create -n pytorch_c python==3.9  --y        conda create -n simple_fastapi_1 python==3.8.18  --y
+创建环境  conda create -n test01_311 python==3.11  --y        conda create -n simple_fastapi_1 python==3.8.18  --y
 激活环境  conda activate pytorch_c
 删除环境  conda remove -n pytorch_c --all --y
 退出环境  conda deactivate
