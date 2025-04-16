@@ -70,7 +70,6 @@ cmd执行验证token        cpolar authtoken M2M4NDk2YmItMmFlZS00OWJiLTk5YzItYzl
 
 
 服务器扩展虚拟内存=======================================================================
-在 CentOS 上设置虚拟内存（Swap）为 4G 的步骤如下：
 Swap 是 Linux 下的虚拟内存机制，用于在物理内存不足时，把一部分磁盘空间当作内存使用。
 1. 查看当前 Swap 使用情况
 swapon -s
