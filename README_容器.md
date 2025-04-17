@@ -115,3 +115,8 @@ vscode链接失败解决办法
 管道错误是,记得清除 C:\Users\Administrator\.ssh\known_hosts   中的链接
 
 
+
+删除node_modules
+rd /s /q node_modules
+
+
