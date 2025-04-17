@@ -44,7 +44,7 @@ def calculate_thickness_proportion(edges, threshold=0.5):
     return thin_edges / total_edges if total_edges > 0 else 0
 
 
-def aaa(path_file):
+def demo_stl_02(path_file):
     print(f"=======读取文件=====================================================")
     from stl import mesh
     import numpy as np
@@ -129,7 +129,9 @@ def aaa(path_file):
     parse_result["thickness_proportion"] = float(thickness_proportion)
     print('parse_result["thickness_proportion"---:', parse_result["thickness_proportion"])
 
+    return {"success": True, "info": {"geometric_complexity": geometric_complexity, "structural_strength": structural_strength}}
+
 
 if __name__ == '__main__':
     path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.stl"
-    aaa(path_file)
+    demo_stl_02(path_file)

@@ -53,7 +53,7 @@ def compute_thickness(file_path):
     # colors = plt.cm.viridis(distances / np.max(distances))  # 使用颜色映射
     gray_color = np.tile([0.5, 0.5, 0.5], (len(mesh.vertices), 1))
     gray_color[distances < wall_thickness] = [1, 0, 0]  # 将小于2mm的区域标记为红色
-    mesh.vertex_colors = o3d.utility.Vector3dVector(gray_color)  #  热力图标记壁厚小于2mm的区域
+    mesh.vertex_colors = o3d.utility.Vector3dVector(gray_color)  # 热力图标记壁厚小于2mm的区域
     # colors[:, :3]  改为灰色
     # 显示模型
     o3d.visualization.draw_geometries([mesh], window_name=f"壁厚分析（红色区域为小于{wall_thickness})")

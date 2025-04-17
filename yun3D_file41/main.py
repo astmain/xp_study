@@ -37,32 +37,32 @@ async def index():
         return result
 
 
-@app.get("/file_parse")
+@app.get("/file_parse111")
 async def index(id: int, path_file: str):
-    print("/file_parse---:")
-    print("id---:", id)
-    print("path_file---:", path_file)
+    # path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.stl"
+    print('file_parse111---:')
+    from pathlib import Path
+    suffix = Path(path_file).suffix
+    print('suffix---:', suffix)
 
-    file_extension = os.path.splitext(path_file)[1]
-    print("file_extension---:", file_extension)
-    result = {
-        "length": 0,
-        "width": 0,
-        "height": 0,
-        "volume": 0,
-        "surface": 0,
-        "triangles": 0,
-        "points": 0,
-        "min_thickness": 0,
-        "thickness_proportion": 0,
-        "geometric_complexity": 0,
-        "structural_strength": 0,
-    }
+    data = {"success": False, "info": {}}
+    if suffix == ".igs":
+        from demo_igs_01 import demo_igs_01
+        data = demo_igs_01(path_file)
 
-    res = {}
-    # stl_parser = StlParse(file_path)
+    if suffix == ".obj":
+        from demo_obj_01 import demo_obj_01
+        data = demo_obj_01(path_file)
 
-    result = dict(code=200, msg="成功:file_parse")
+    if suffix == ".stl":
+        from demo_stl_02 import demo_stl_02
+        data = demo_stl_02(path_file)
+
+    if suffix == ".stp":
+        from demo_stp_01 import demo_stp_01
+        data = demo_stp_01(path_file)
+
+    result = dict(code=200, msg="完成:file_parse111", data=data)
     print("响应结果---:", result)
     return result
 
@@ -70,9 +70,9 @@ async def index(id: int, path_file: str):
 if __name__ == '__main__':
     print("""
     接口文档===================
-    http://127.0.0.1:9001/docs
-    http://127.0.0.1:9001/index
-    http://127.0.0.1:9001/test
+    http://127.0.0.1:9002/docs
+    http://127.0.0.1:9002/index
+    http://127.0.0.1:9002/test
     """)
-    uvicorn.run('main:app', host='0.0.0.0', port=9001, reload=True, workers=1)
+    uvicorn.run('main:app', host='0.0.0.0', port=9002, reload=True, workers=1)
     # uvicorn.run(app, host='0.0.0.0', port=9001)

@@ -1,4 +1,4 @@
-def aaa(path_file):
+def demo_obj_01(path_file):
     print(f"=======读取文件=====================================================")
     import trimesh
     print("path_file---:", path_file)
@@ -37,8 +37,9 @@ def aaa(path_file):
     structural_strength = float(abs(points / triangles))
     print("geometric_complexity---:", geometric_complexity)
     print("structural_strength---:", structural_strength)
+    return {"success": True, "info": {"geometric_complexity": geometric_complexity, "structural_strength": structural_strength}}
 
 
 if __name__ == '__main__':
     path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.obj"
-    aaa(path_file)
+    demo_obj_01(path_file)

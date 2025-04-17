@@ -1,4 +1,4 @@
-def aaa(path_file):
+def demo_stp_01(path_file):
     print(f"=======读取文件=====================================================")
     from OCC.Core.STEPControl import STEPControl_Reader
     from OCC.Core.IFSelect import IFSelect_RetDone
@@ -73,7 +73,11 @@ def aaa(path_file):
     print('parse_result["geometric_complexity"]---:', parse_result["geometric_complexity"])
     print('parse_result["structural_strength"]---:', parse_result["structural_strength"])
 
+    geometric_complexity = parse_result["geometric_complexity"]
+    structural_strength = parse_result["structural_strength"]
+    return {"success": True, "info": {"geometric_complexity": geometric_complexity, "structural_strength": structural_strength}}
+
 
 if __name__ == '__main__':
     path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.stp"
-    aaa(path_file)
+    demo_stp_01(path_file)
