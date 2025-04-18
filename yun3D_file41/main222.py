@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-
-
 import uvicorn
 from config_app import app
 
-# 路由注册=====================================
+# 路由引入=====================================
 from api_cup_parse import route as api_cup_parse
 
+# 路由注册=====================================
 app.include_router(api_cup_parse, tags=["cup解析", ])
 
 if __name__ == '__main__':
