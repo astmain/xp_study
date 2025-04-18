@@ -1,4 +1,4 @@
-def demo_igs_01(path_file):
+def cpu_igs_01(path_file):
     print(f"=======读取文件=====================================================")
     from OCC.Core.IGESControl import IGESControl_Reader
     from OCC.Core.IFSelect import IFSelect_RetDone
@@ -80,4 +80,4 @@ def demo_igs_01(path_file):
 
 if __name__ == '__main__':
     path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.igs"
-    demo_igs_01(path_file)
+    cpu_igs_01(path_file)

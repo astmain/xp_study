@@ -1,4 +1,4 @@
-def demo_stp_01(path_file):
+def cpu_stp_01(path_file):
     print(f"=======读取文件=====================================================")
     from OCC.Core.STEPControl import STEPControl_Reader
     from OCC.Core.IFSelect import IFSelect_RetDone
@@ -80,4 +80,4 @@ def demo_stp_01(path_file):
 
 if __name__ == '__main__':
     path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.stp"
-    demo_stp_01(path_file)
+    cpu_stp_01(path_file)

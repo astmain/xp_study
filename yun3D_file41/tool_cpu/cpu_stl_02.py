@@ -44,7 +44,7 @@ def calculate_thickness_proportion(edges, threshold=0.5):
     return thin_edges / total_edges if total_edges > 0 else 0
 
 
-def demo_stl_02(path_file):
+def cpu_stl_02(path_file):
     print(f"=======读取文件=====================================================")
     from stl import mesh
     import numpy as np
@@ -134,4 +134,4 @@ def demo_stl_02(path_file):
 
 if __name__ == '__main__':
     path_file = r"C:\Users\Administrator\Desktop\test1_demo\111.stl"
-    demo_stl_02(path_file)
+    cpu_stl_02(path_file)
