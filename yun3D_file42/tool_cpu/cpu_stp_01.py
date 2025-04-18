@@ -1,4 +1,5 @@
 def cpu_stp_01(path_file):
+    print('执行---cpu_stp_01---=====================================================')
     print(f"=======读取文件=====================================================")
     from OCC.Core.STEPControl import STEPControl_Reader
     from OCC.Core.IFSelect import IFSelect_RetDone

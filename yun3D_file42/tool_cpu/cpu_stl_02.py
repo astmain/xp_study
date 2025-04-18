@@ -45,6 +45,7 @@ def calculate_thickness_proportion(edges, threshold=0.5):
 
 
 def cpu_stl_02(path_file):
+    print('执行---cpu_stl_02---=====================================================')
     print(f"=======读取文件=====================================================")
     from stl import mesh
     import numpy as np

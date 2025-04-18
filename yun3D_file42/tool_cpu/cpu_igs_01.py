@@ -1,4 +1,5 @@
 def cpu_igs_01(path_file):
+    print('执行---cpu_igs_01---=====================================================')
     print(f"=======读取文件=====================================================")
     from OCC.Core.IGESControl import IGESControl_Reader
     from OCC.Core.IFSelect import IFSelect_RetDone

@@ -1,5 +1,7 @@
+import os
+
+from tool import tool
 from fastapi import APIRouter
-from pathlib import Path
 from tool_cpu.cpu_igs_01 import cpu_igs_01
 from tool_cpu.cpu_obj_01 import cpu_obj_01
 # from tool_cpu.cpu_stl_01 import cpu_stl_01
@@ -9,9 +11,9 @@ from tool_cpu.cpu_stp_01 import cpu_stp_01
 route = APIRouter()
 
 
-@route.post("/cpu_parse")
-async def cpu_parse(id: str, path_file):
-    suffix = Path(path_file).suffix
+def run(path_file):
+    tool.file_exist(path_file)
+    suffix = tool.file_suffix(path_file)
     print('suffix---:', suffix)
 
     data = {"success": False, "info": {}}
@@ -27,7 +29,17 @@ async def cpu_parse(id: str, path_file):
     if suffix == ".stp":
         data = cpu_stp_01(path_file)
 
-    result = {}
-    result['code'] = 200
-    result['msg'] = "成功"
+    print('data---:', data)
+    return data
+
+
+@route.post("/cpu_parse")
+def cpu_parse(uid: str = "123", path_file: str = tool.file_join("static/111.stl")):
+    data = run(path_file)
+    result = {'code': 200, 'msg': "成功", 'data': data}
     return result
+
+
+if __name__ == '__main__':
+    path_file = tool.file_join("static/111.stl")
+    run(path_file)

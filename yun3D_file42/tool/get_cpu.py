@@ -10,3 +10,4 @@ for platform in platforms:
         print("  Type:", cl.device_type.to_string(device.type))
         print("  Compute Units:", device.max_compute_units)
         print("  Global Memory Size:", device.global_mem_size / (1024 ** 2), "MB")
+
