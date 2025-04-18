@@ -10,7 +10,7 @@ def demo_stp_01(path_file):
     print('111---:', status)
     print('shape---:', shape)
 
-    print(f"=======长宽高======================  ===============================")
+    print(f"=======长宽高=====================================================")
     from OCC.Core.Bnd import Bnd_Box
     from OCC.Core.BRepBndLib import brepbndlib
 
