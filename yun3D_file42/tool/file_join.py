@@ -1,5 +1,4 @@
 import os
-from pathlib import Path
 
 
 def file_join(path_file):
@@ -14,6 +13,8 @@ def file_join(path_file):
     path_file_new = os.path.normpath(path_file_new)
     # print('333---path_file:', path_file)
     # print('444---path_file_new:', path_file_new)
+    path_file_new = path_file_new.replace("\\tool", "")
+    # print('555---path_file_new:', path_file_new)
 
     # current_script_path = Path(__file__).resolve().parent.parent
     # current_script_path = Path(current_script_path)
@@ -26,3 +27,4 @@ def file_join(path_file):
 
 if __name__ == '__main__':
     print('file_join---:', file_join("1111"))
+    print('file_join---:', file_join(""))
